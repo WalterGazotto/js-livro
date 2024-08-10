@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        var num = 1;
+        
+        // TIPO DE VARIAVEL EOU EXPRESSÃO
+        console.log('typeof num:', typeof num);
+        console.log('typeof Packt:', typeof 'Packt');
+        console.log('typeof true:', typeof true);
+        console.log('typeof [1,2,3]:', typeof [1,2,3]);
+        console.log('typeof {name:John}:', typeof {name:'John'});
+        //Há dois tipos de dados em JS
+        // Dados Primitivos: Null, undefined, string, number, boolean e symbol
+        // Dados Derivados/Objetos: Objetos JS, incluindo funções, arrays e expressões regulares
+
+
+        // OPERADOR DELETE
+        var meuobj = {name: 'Walter', idade: 31, RG: 488477608}
+        delete meuobj.idade;
+        delete meuobj.RG;
+        console.log(meuobj);
+    </script>
+</body>
+</html>
