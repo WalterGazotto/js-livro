@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopos das variáveis</title>
+</head>
+<body>
+    <script>
+        var myVariable = 'global'; // Declarando a variavel COM o VAR, a função não altera o valor.
+        myOtherVariable = 'global'; // Declarando a variavel SEM o VAR, a função altera o valor.
+
+        function myFunction() {
+            var myVariable = 'local';
+            return myVariable;
+        }
+
+        function myOtherFunction() {
+            myOtherVariable = 'local';
+            return myOtherVariable;
+        }
+
+        console.log(myVariable);
+        console.log(myFunction());
+        console.log(myOtherVariable);
+        console.log(myOtherFunction());
+        console.log(myOtherVariable);
+
+    </script>
+</body>
+</html>
